@@ -1,0 +1,13 @@
+version: "3"
+ 
+services:
+  dash-sample-app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: dash-sample-app
+    container_name: dash-sample-app
+    ports: 
+       - "8050:8050"
+    command: 
+      ['python', 'main.py']
