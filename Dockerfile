@@ -11,3 +11,4 @@ RUN pip install -U pip && \
     pip install -r requirements.txt
 
 EXPOSE 8050
+
